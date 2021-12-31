@@ -1,0 +1,32 @@
+
+.hero{
+    background-color: blue;
+    display: flex;
+    padding:20px 5%;
+}
+
+.quotes{
+    flex: 0.9;
+}
+
+form{
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.form-group {
+    margin: 0 auto;
+    width: 450px; 
+}
+
+input[type="text"]{
+    margin:20px 0;
+}
+#btn{
+    width:200px; 
+}
+
+input[type="text"], #btn{
+    outline:none;
+}
