@@ -11,7 +11,7 @@ export class AppComponent {
   quotes:Quote[] = [];
   newQuote!:Quote;
 
-  public username!: string;
+  public name!: string;
   public quote!: string;
   public author!: string;
 
@@ -21,8 +21,8 @@ export class AppComponent {
 
 
   addQuote(){
-    this.newQuote = new Quote(this.username, this.quote, this.author, new Date());
-    this.quotes.push(new Quote(this.username, this.quote, this.author, new Date()));
+    this.newQuote = new Quote(this.name, this.quote, this.author, new Date());
+    this.quotes.push(this.newQuote);
 
   }
 

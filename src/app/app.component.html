@@ -1,18 +1,26 @@
 
 <div class="hero">
-<form #quoteForm='ngForm'>
+<form #appForm='ngForm'>
   <div class="form-group">
-    <input type="text" class="form-control" [(ngModel)]="newQuote.postedBy" name="usename" id="username" required placeholder="Enter username">
+    <input type="text" class="form-control" [(ngModel)]="newQuote.postedBy" name="name" id="name" #name='ngModel' required placeholder="Enter username">
+    <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+      <p>Username is invalid</p>
+    </div>
   </div>
 
   <div class="form-group">
-    <textarea type="text" class="form-control" [(ngModel)]="newQuote.quote" name="quote" id="quote" required placeholder="Enter quote"></textarea>
+    <textarea type="text" class="form-control" [(ngModel)]="newQuote.quote" name="quote" #quote='ngModel' id="quote" required placeholder="Enter quote"></textarea>
+    <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+      <p>Quote is invalid</p>
+    </div>
   </div>
 
   <div class="form-group">
-    <input type="text" class="form-control" [(ngModel)]="newQuote.author" name="author" id="author" required placeholder="Enter quote author">
+    <input type="text" class="form-control" [(ngModel)]="newQuote.author" name="author" id="author" #author='ngModel' required placeholder="Enter quote author">
+    <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+      <p>Author is invalid</p>
+    </div>
   </div>
-
   <button type="submit" class="btn btn-primary" id="btn">Quote</button>
 </form>
 
