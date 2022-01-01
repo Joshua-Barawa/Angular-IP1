@@ -1,0 +1,23 @@
+form{
+    margin: auto;
+    text-align: center;
+}
+
+.form-group {
+    margin: 0 auto;
+    width: 450px; 
+}
+
+.alert{
+    height:auto;
+}
+.form-group{
+    margin:20px;
+}
+#btn{
+    width:200px; 
+}
+
+input[type="text"], #btn{
+    outline:none;
+}

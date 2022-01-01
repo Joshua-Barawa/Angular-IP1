@@ -1,0 +1,24 @@
+<form (ngSubmit)="onSubmit()" #quoteForm='ngForm'>
+  <div class="form-group">
+    <input type="text" class="form-control" [(ngModel)]='username' name="username" value=" " #name='ngModel' id="names" required placeholder="Enter username" />
+    <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+ Quote is required
+</div>
+  </div>
+  
+    <div class="form-group">
+      <textarea type="text" class="form-control" [(ngModel)]="quot" name="quotes" value=" " #quote='ngModel' id="quotes" required placeholder="Enter quote"></textarea>
+      <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+   Quote is required
+ </div>
+    </div>
+  
+    <div class="form-group">
+      <input type="text" class="form-control" [(ngModel)]="authors" name="author" id="author" value=" " #author='ngModel' required='' placeholder="Enter quote author" />
+      <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+   Author is required
+ </div>
+    </div>
+    <button type="submit" class="btn btn-primary" id="btn" (click)="addQuote(); quoteForm.reset()" [disabled]="!quoteForm.form.valid">Quote</button>
+  </form>
+  
