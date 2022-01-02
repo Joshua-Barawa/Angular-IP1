@@ -22,15 +22,8 @@ onSubmit(){
 }
 
   addQuote(){
-
-    if(this.username === " " || this.quot === " " || this.authors == ''){
-      console.log("I need some values")
-    }
-
-    else{
       this.quotes.push(new Quote(this.username, this.quot, this.authors, new Date()));
       console.log(this.quotes);
-    }
   }
 
 

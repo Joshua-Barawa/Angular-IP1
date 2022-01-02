@@ -1,8 +1,7 @@
 
 .hero{
-    background-color: blue;
     display: flex;
-    padding:20px 5%;
+    padding:20px 8%;
 }
 
 .quotes{

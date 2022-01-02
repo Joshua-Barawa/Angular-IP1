@@ -4,16 +4,14 @@ form{
 }
 
 .form-group {
-    margin: 0 auto;
+    margin:20px;
     width: 450px; 
 }
 
 .alert{
     height:auto;
 }
-.form-group{
-    margin:20px;
-}
+
 #btn{
     width:200px; 
 }
