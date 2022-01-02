@@ -22,3 +22,6 @@
     <button type="submit" class="btn btn-primary" id="btn" (click)="addQuote(); quoteForm.reset()" [disabled]="!quoteForm.form.valid">Quote</button>
   </form>
   
+  <div class="quotes">
+    <app-quote [quotes] = 'quotes'></app-quote>
+    </div>
