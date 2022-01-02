@@ -1,21 +1,23 @@
 .hero{
-    display: flex;
-    padding:20px 8%;
-    background-color:blue;
-    width:100vw;
+    padding:20px 0%;
+width:80vw;
 }
 
 .quotes{
     flex: 0.9;
+    padding: 20px 10px;
 }
 
 form{
     margin: auto;
     text-align: center;
+    
 }
 
 .form-group {
-    margin:20px;
+    margin: auto;
+    margin-top:20px;
+    margin-bottom:20px;
     width: 450px; 
 }
 

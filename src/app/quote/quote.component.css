@@ -1,5 +1,14 @@
 
+.card-body{
+display: flex;
+}
 
-.form-group{
-    
+.btns{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.blockquote{
+    margin-left:20px;
 }
