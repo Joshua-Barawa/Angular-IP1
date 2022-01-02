@@ -1,3 +1,7 @@
+
+<h2>Quote-App</h2>
+<div class="hero">
+
 <form (ngSubmit)="onSubmit()" #quoteForm='ngForm'>
   <div class="form-group">
     <input type="text" class="form-control" [(ngModel)]='username' name="username" value=" " #name='ngModel' id="names" required placeholder="Enter username" />
@@ -25,3 +29,5 @@
   <div class="quotes">
     <app-quote [quotes] = 'quotes'></app-quote>
     </div>
+
+  </div>
