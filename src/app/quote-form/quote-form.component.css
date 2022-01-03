@@ -1,17 +1,19 @@
 .hero{
-    padding:20px 0%;
-width:80vw;
+    padding:10px 0%;
+   display:flex;
+   margin: auto;
+
 }
 
 .quotes{
     flex: 0.9;
-    padding: 20px 10px;
+    padding: 0px 10px;
 }
 
 form{
-    margin: auto;
     text-align: center;
-    
+    position: sticky;
+    top: 0;
 }
 
 .form-group {

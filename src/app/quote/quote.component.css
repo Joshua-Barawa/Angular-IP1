@@ -1,4 +1,11 @@
 
+
+.card{
+    width:700px;
+    min-width: 90%;
+    word-break: break-all;
+    margin: 20px 0;
+}
 .card-body{
 display: flex;
 }
@@ -14,9 +21,22 @@ display: flex;
 }
 
 .up-btn{
-    width: 0;
-  height: 0;
-  border: 100px solid white;
+  width: 0px;
+  height: 0px;
+  border: 25px solid white;
   border-top: 0;
-  border-bottom: 20px solid red;
+  border-bottom: 25px solid blue;
+
+}
+
+.down-btn{
+    width: 0;
+    height: 0;
+    border: 25px solid white;
+    border-top:25px solid red;
+    border-bottom: 0;   
+}
+
+.counts{
+    font-size: 20px;
 }

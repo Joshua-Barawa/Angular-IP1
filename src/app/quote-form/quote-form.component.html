@@ -3,7 +3,7 @@
 <div class="hero">
 
 <form (ngSubmit)="onSubmit()" #quoteForm='ngForm'>
-  <h2>Quote-App....Add your favourite quote</h2>
+ 
   <div class="form-group">
     <input type="text" class="form-control" [(ngModel)]='username' name="username" value=" " #name='ngModel' id="names" required placeholder="Enter username" />
     <div [hidden]="name.valid || name.pristine" class="alert alert-danger">

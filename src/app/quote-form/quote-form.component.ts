@@ -21,8 +21,10 @@ onSubmit(){
   this.submmitng = true;
 }
 
+ 
   addQuote(){
       this.quotes.push(new Quote(this.username, this.quot, this.authors, new Date()));
+      sessionStorage.setItem('quotes', JSON.stringify(this.quotes))
       console.log(this.quotes);
   }
 

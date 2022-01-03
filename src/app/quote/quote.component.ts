@@ -10,9 +10,12 @@ export class QuoteComponent implements OnInit {
 
   @Input() quotes!:Quote[];
 
+  
+
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
