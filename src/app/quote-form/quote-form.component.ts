@@ -14,20 +14,16 @@ export class QuoteFormComponent implements OnInit {
   public username!:string;
   public quot!: string;
   public authors!: string;
- public votes:number = 0;
-submmitng = false;
+  public votes:number = 0;
+  submmitng = false;
 
 onSubmit(){
   this.submmitng = true;
 }
 
- 
   addQuote(){
       this.quotes.push(new Quote(this.username, this.quot, this.authors, new Date(), this.votes));
-      sessionStorage.setItem('quotes', JSON.stringify(this.quotes))
-      console.log(this.quotes);
   }
-
 
   constructor() { }
 
