@@ -40,3 +40,11 @@ display: flex;
 .counts{
     font-size: 20px;
 }
+
+.delete-btn{
+    background-color:transparent !important;
+    margin: auto;
+    border: none;
+    color:red;
+    font-size: 20px;
+}
