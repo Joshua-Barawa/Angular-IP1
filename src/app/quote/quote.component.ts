@@ -9,7 +9,7 @@ import {Quote} from '../quote'
 export class QuoteComponent implements OnInit {
 
   @Input() quotes!:Quote[];
-
+  @Input() votes!:number;
   
 
   constructor() { }

@@ -6,11 +6,12 @@ export class Quote {
     public postedOn!:Date
     public votes!:number;
 
-    constructor(name:string ,quote:string, author:string, postedOn:Date) {
+    constructor(name:string ,quote:string, author:string, postedOn:Date, votes:number) {
         this.name = name;
         this.quote = quote;
         this.author = author;
-        this.postedOn = postedOn
+        this.postedOn = postedOn;
+        this.votes = votes;
     }
 
 }
