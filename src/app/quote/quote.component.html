@@ -15,4 +15,7 @@
       </blockquote>
     </div>
     <button class="btn btn-danger" (click)="deleteQuote(index)">Delete</button>
+   
   </div>
+
+  <h4 *ngIf="quotes.length == 0" >Add a quote genius.Dont let down your grandparents</h4>
