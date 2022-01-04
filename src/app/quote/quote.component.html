@@ -1,13 +1,13 @@
 
-<div *ngFor="let quote of quotes" class="card">
+<div *ngFor="let quote of quotes;let index = index" class="card">
     <div class="card-header">
       {{quote.name}} posted this quote on {{quote.postedOn|date}}
     </div>
     <div class="card-body">
         <div class="btns">
-            <button class="up-btn"></button>
-            <span class="counts">{{votes}}</span>
-            <button class="down-btn"></button>
+            <button class="up-btn" (click) = 'handleUpVote(index)'></button>
+            <span class="counts">{{quote.votes}}</span>
+            <button class="down-btn" (click) = 'handleDownVote(index)'></button>
         </div>
       <blockquote class="blockquote mb-0">
         <p>{{quote.quote}}</p>

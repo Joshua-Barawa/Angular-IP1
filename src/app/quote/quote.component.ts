@@ -9,10 +9,25 @@ import {Quote} from '../quote'
 export class QuoteComponent implements OnInit {
 
   @Input() quotes!:Quote[];
-  @Input() votes!:number;
-  
 
-  constructor() { }
+  
+  constructor() {}
+
+  handleUpVote(index:number){
+    this.quotes[index].votes = this.quotes[index].votes + 1;
+    console.log(index)
+  }
+
+  handleDownVote(index:number){
+    if(this.quotes[index].votes > 0){
+      this.quotes[index].votes = this.quotes[index].votes - 1;
+      console.log(index)
+    }
+    else{
+      this.quotes[index].votes = 0;
+    }
+   
+  }
 
   ngOnInit(): void {
     
